@@ -1,12 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+:root {
+    --bordeaux: #6B1F2A;
+    --creme: #FAF7F2;
+    --encre: #1A1A1A;
+}
 body{
     font-family: Arial, sans-serif;
     margin: 0;
-    color: #1A1A1A;
-    background-color: #FAF7F2;
+    color: var(--encre);
+    background-color: var(--creme);
 }
-SECTION {
+section {
     padding: 40px 20px;
     text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 header {
     background-image: url("cafe5.jpeg");
@@ -14,19 +24,22 @@ header {
     color: white;
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 header h1 {
-    margin: 0 0 10 px 0;
+    margin: 0 0 10px 0;
     font-size: 36px;
 }
 nav a {
     color: white;
-    margin: 0 12px;
+    margin: 0;
     text-decoration: none;
     font-weight: bold;
 }
 .bouton, button {
-    background-color: #6B1F2A;
+    background-color: var(--bordeaux);
     color: white;
     padding: 12px 26px;
     border: none ;
@@ -35,9 +48,11 @@ nav a {
     cursor: pointer ;
     display: inline-block;
     margin-top: 15px;
+    border-radius: 30px;
+    transition: all 0.25s ease;
 }
 footer {
-    background-color: #1A1A1A;
+    background-color: var(--encre);
     color: white;
     text-align: center;
     padding: 15px;
@@ -56,18 +71,57 @@ img {
     border-radius: 12px;
     margin-top: 15px;
 }
-section img {
-    width: 48%;
-    height: 280px;
-    object-fit: cover;
-    margin: 5px;
-    border-radius: 12px;
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap; wrap;
 }
-.photo-principale {
-    display: block;
-    width: 90%;
-    max-width: 500px;
-    height: auto;
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 15px;
+}
+.galerie img {
+    flex: 1 1 220px;
+    max-width: 340px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 0;
+}
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 26px;
+    }
+    section {
+        padding: 28px 14px;
+    }
+    .galerie img {
+        flex-basis: 100%;
+        max-width: none;
+        height: 200px;
+    }
+}
+.bouton:hover, button:hover {
+    background-color: #8A2A38;
+    transform: translateY(-2px);
+}
+#liste-produits {
+    display-grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    max-width: 800px;
     margin: 20px auto;
-    border: 3px solid #6B1F2A;
+}
+#liste-produits {
+    background-color: white;
+    border-radius: 12px;
+    padding: 14px 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0.08);
+    margin: 0;
+    font-weight: bold;
+    color: var(--bordeaux);
 }
