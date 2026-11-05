@@ -1,0 +1,73 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #1A1A1A;
+    background-color: #FAF7F2;
+}
+SECTION {
+    padding: 40px 20px;
+    text-align: center;
+}
+header {
+    background-image: url("cafe5.jpeg");
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+header h1 {
+    margin: 0 0 10 px 0;
+    font-size: 36px;
+}
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.bouton, button {
+    background-color: #6B1F2A;
+    color: white;
+    padding: 12px 26px;
+    border: none ;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer ;
+    display: inline-block;
+    margin-top: 15px;
+}
+footer {
+    background-color: #1A1A1A;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 18px;
+}
+li{
+    margin: 8px 0;
+}
+img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+section img {
+    width: 48%;
+    height: 280px;
+    object-fit: cover;
+    margin: 5px;
+    border-radius: 12px;
+}
+.photo-principale {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #6B1F2A;
+}
