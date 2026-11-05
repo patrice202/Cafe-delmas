@@ -25,18 +25,19 @@
   </section>
   <section id="services">
     <h2>Nos services</h2>
-    <ul>
-        <li>Torréfaction artisanale</li>
-        <li>Livraison aux cafés et restaurants</li>
-        <li>Vente en gros et au detail</li>
-    </ul>
+    <ul id="liste-produits"></ul>
+    <h3>Calcule ta commande</h3>
+    <p>Prix d'une tasse : 4 $ - 10 % de rabais dès 10 tasses.</p>
+    <input type="number" id="quantite" value="1" min="1">
+    <button id="btn-calculer" class="bouton">Calculer</button>
+    <p id="resultat"></p>
   </section>
   <section id="contact">
     <h2>Contact</h2>
     <p>Écris nous : <a 
         href="mailto:info@cafedelmas.com">info@cafedelmas.com</a></p>
         <p id="message"></p>
-        <button onclick="remercier()">Dire bonjour</button>
+        <button id="btn-bonjour" class="bouton">Dire bonjour</button>
   </section>
   <footer>
     <p>© <span id="annee"></span> Café Delmas - Miami</p>
